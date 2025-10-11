@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Escritórios de Advocacia</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <!-- API do Google Maps com Places e Autocomplete -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxU6-mR51jRqa6fzW3TqsB6qUPloTGIY&libraries=places"
+    async defer>
+  </script>
+</head>
+
+<body onload="initMap()">
+  <header>
+  <h1>Localizar Escritórios de Advocacia</h1>
+  <nav>
+    <button onclick="irPara('index.html')">Início</button>
+    <button onclick="irPara('pilares.html')">Pilares</button>
+    <button onclick="irPara('mapa.html')">Mapa Mental</button>
+  </nav>
+  </header>
+
+
+  <main class="mapa-busca">
+    <div class="search-bar">
+      <input id="search-input" type="text" placeholder="Pesquise outro local ou tipo de escritório..." />
+      <button onclick="buscarPorTexto()">🔍 Buscar</button>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <footer>
+    <p>Raiz da Igualdade © 2025</p>
+  </footer>
+</body>
+</html>
