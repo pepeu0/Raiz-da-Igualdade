@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=zoom_in" />
+  <title>Raiz da Igualdade - Direitos Humanos</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo-titulo">
+      <img src="images/logo.png" alt=logo" width="36" height="36" style="border-radius: 8px; ">
+      <h1>Raiz da Igualdade</h1>
+    </div>
+    
+    <nav>
+      <button class="navegacao" onclick="showPage('home')">Início</button>
+      <button class="navegacao" onclick="showPage('pilares')">Pilares</button>
+      <button class="navegacao" onclick="showPage('mapa-mental')">Mapa Mental</button>
+      <button class="navegacao" onclick="showPage('equipe')">Sobre</button>
+    </nav>
+
+  </header>
+
+<main class="container">
+  <section id="home" class="page">
+    <div class="card">
+      <h2>Bem-vindo ao Portal de Direitos Humanos</h2>
+      <p>Direitos humanos são direitos fundamentais a todos os seres humanos, 
+        incluindo o direito à vida, liberdade, educação e igualdade perante a lei.<br> 
+        Este portal oferece informações, notícias atualizadas e um mapa com escritórios jurídicos
+        e defensorias públicas próximas a você.</p>
+    </div>
+
+    <div id="gmaps">
+      <a href="busca.html">  <button >Buscar Escritórios</button></a>
+    </div>
+
+    <br>
+    <div class="interface-news">
+      <section class="noticia">
+        <h2 class="title-news">Últimas Notícias sobre Direitos Humanos</h2>
+        <button id="atualizarBtn"> Atualizar agora</button>
+        <div id="noticias">Carregando notícias...</div>
+        <div id="ultimaAtualizacao"></div>
+
+      </section>
+    </div>
+  </section>
+</main>
+
+<section id="pilares" class="page" style="display: none;">
+  <main class="conteudo">
+    <div class="interface-pilar">
+     <section class="pilar">
+        <h2>🌤️ Liberdade</h2>
+       <p>
+         A liberdade pode ser entendida como ausência de restrições ou como posse de direitos civis,
+         políticos e sociais. No plano político, envolve exercer a cidadania respeitando os direitos dos outros;
+         no plano ético, é a capacidade de escolha sem coerção externa. Em sociedades de consumo,
+         a liberdade pode ser limitada à escolha entre opções pré-determinadas, tornando-se muitas vezes ilusória.
+         De modo geral, a liberdade de uns sempre pode afetar a de outros.
+       </p>
+     </section>
+
+      <section class="pilar">
+        <h2>⚖️ Igualdade</h2>
+       <p>
+          Igualdade é o princípio que garante que todas as pessoas tenham os mesmos direitos,
+          oportunidades e tratamento, sem discriminação de origem, gênero, cor, religião ou condição social.
+          Isso não significa tratar todos exatamente da mesma maneira, mas reconhecer diferenças e aplicar
+          tratamentos adequados quando necessário, impedindo privilégios ou exclusões injustas.
+        </p>
+
+        <h3>Igualdade formal x igualdade material</h3>
+        <p>A igualdade formal é aquela escrita na lei — todos são iguais perante ela.
+          Já a igualdade material busca garantir, na prática, que todas as pessoas tenham as mesmas condições reais
+          para exercer seus direitos, levando em conta diferenças sociais, econômicas e culturais.
+        </p>
+
+        <h3>Igualdade e equidade</h3>
+        <p>
+         A equidade é o caminho para alcançar a verdadeira igualdade: trata as pessoas de acordo com
+         suas necessidades, reconhecendo que nem todos partem do mesmo ponto.
+        </p>
+      </section>
+
+      <section class="pilar">
+        <h2>⚖️ Justiça</h2>
+        <p>
+         Justiça é o princípio que busca garantir o equilíbrio e a imparcialidade nas relações sociais,
+          assegurando que todas as pessoas sejam tratadas com igualdade e respeito aos seus direitos.
+          Ela orienta a forma como as leis são aplicadas e como os conflitos são resolvidos, sem
+          discriminação ou favorecimento.
+        </p>
+
+        <ul>
+         <li><strong>Justiça Restaurativa:</strong> busca reparar danos e promover reconciliação entre as partes, valorizando o diálogo e a empatia.</li>
+         <li><strong>Justiça Ambiental:</strong> defende a distribuição justa dos recursos naturais, protegendo comunidades vulneráveis.</li>
+         <li><strong>Justiça de Transição:</strong> promove a verdade, a reconciliação e a reparação em sociedades pós-conflito ou pós-ditadura.</li>
+         <li><strong>Justiça Digital:</strong> adapta o sistema judiciário à era tecnológica, ampliando o acesso à justiça por meios digitais.</li>
+         <li><strong>Justiça Econômica:</strong> busca uma distribuição mais justa da riqueza e igualdade de oportunidades no trabalho.</li>
+        </ul>
+      </section>
+
+      <section class="pilar">
+       <h2>🌱 Dignidade</h2>
+        <p>
+         A dignidade humana é um valor essencial e intrínseco de cada indivíduo, que deve ser reconhecido
+         e respeitado como um fim em si mesmo. Ela garante direitos fundamentais, como vida, liberdade,
+         igualdade, saúde, educação e participação ativa na sociedade.
+         A dignidade é inalienável e serve de base para leis e normas que asseguram uma existência justa,
+         respeitosa e plena.
+        </p>
+      </section>
+  </div><!--interface-pilar-->
+    <section class="fontes">
+      <h3>Fontes Consultadas</h3>
+      <ul>
+        <li><a href="https://enciclopediajuridica.pucsp.br/verbete/4/edicao-1/igualdade" target="_blank">Enciclopédia Jurídica da PUC-SP — Igualdade</a></li>
+        <li><a href="https://brasilescola.uol.com.br/sociologia/consciencia-e-liberda-humana-texto-2.htm" target="_blank">Brasil Escola — Consciência e Liberdade Humana</a></li>
+        <li><a href="https://brasilescola.uol.com.br/o-que-e/o-que-e-sociologia/o-que-e-justica.htm" target="_blank">Brasil Escola — O que é Justiça</a></li>
+        <li><a href="https://enciclopediajuridica.pucsp.br/verbete/507/edicao-1/dignidade-humana" target="_blank">Enciclopédia Jurídica da PUC-SP — Dignidade Humana</a></li>
+      </ul>
+    </section>
+  </main>
+</section><!--pilares-->
+
+<main id="mapa-mental" class="page" style="display: none;">
+  <section class="container">
+    <h1>Mapa Mental - Direitos Humanos</h1>
+    <div class="interface-mapa-mental">
+      <img src="images/Mapa Mental Direitos Humanos.jpeg" 
+           alt="Mapa Mental Direitos Humanos" id="mapaMental">
+      <button id="fecharZoom" 
+              style="display: none;">Fechar Zoom</button>
+    <div class="overlay"></div>
+    </div>
+  </section>
+</main><!--mapa-container-->
+
+<main id="mapa" class="page" style="display: none;">
+   <h3>Pesquise aqui o consultório mais próximo de você!</h3>
+    <div class="search-bar">
+      
+      <input id="search-input" type="text" placeholder="Pesquise outro local ou tipo de escritório..." />
+        <button onclick="buscarPorTexto()">🔍 Buscar</button>
+
+    </div>
+    <div id="map"></div>
+</main><!--mapa-busca-->
+
+<section id="equipe" class="page" style="display: none;">
+  <main class="sobre">
+    <div class="interface-integrantes">
+      <section class="integrantes">
+        <h2>Desenvolvedores</h2>
+          <ul>
+            <li>Éric do Nascimento Santos</li>
+            <li>Gabriel Seiti de Marino Suda</li>
+            <li>Murilo Vieira Marinho</li>
+            <li>Paulo Matheus Mandruzatto</li>
+            <li>Victor Gonzalez de Sa</li>
+            <li>Gabriel Antônio Fernandes Pinheiro da Silva</li>
+          </ul>
+          <p>Estudantes do 4° e 5° semestre da Universidade Carlos Drummond de Andrade</p>
+      </section><!--integrantes-->
+    </div><!--interface-integrantes-->
+  </main><!--sobre-->
+</section><!--equipe-->
+
+  <footer>
+    <p>© 2025 Raiz da Igualdade | Projeto de Extensão - Direitos Humanos</p>
+  </footer>
+     <script src="script.js"></script>
+ <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI&libraries=places&callback=initMap">
+</script>
+</body>
+</html>
